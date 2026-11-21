@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdulhameed Olaitan Ridwanullah | Ridoscope</title>
+  <meta name="description" content="Abdulhameed Olaitan Ridwanullah is an interdisciplinary researcher and Northeastern University PhD candidate studying the sociotechnical dimensions of digital technology.">
+  <meta name="theme-color" content="#f9f8f4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abdulhameed Olaitan Ridwanullah | Ridoscope">
+  <meta property="og:description" content="Interdisciplinary research on digital technology, platform governance, content moderation, and digital politics in Nigeria.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%231e5145'/%3E%3Ctext x='20' y='29' fill='white' text-anchor='middle' font-family='Georgia,serif' font-size='27'%3ER%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f9f8f4;
+      --surface: #fffefa;
+      --ink: #172d29;
+      --muted: #4c5e58;
+      --green: #1e5145;
+      --light-green: #e6eee5;
+      --line: #d8ded4;
+      --gold: #e7c587;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --width: 70rem;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font: 1.0625rem/1.65 var(--sans); }
+    h1, h2, h3, h4, h5, p, figure { margin: 0; }
+    h1, h2, h3, h4, h5 { font-family: var(--serif); font-weight: 400; line-height: 1.13; }
+    h1 { font-size: clamp(2.65rem, 6vw, 5.3rem); letter-spacing: -.065em; }
+    h2 { font-size: clamp(2.25rem, 4vw, 3.6rem); letter-spacing: -.05em; }
+    h3 { font-size: clamp(1.45rem, 2.8vw, 1.8rem); letter-spacing: -.03em; }
+    a { color: var(--green); text-underline-offset: .22em; }
+    a:hover { text-decoration-thickness: .14em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    .wrap { width: min(var(--width), calc(100% - 3rem)); margin-inline: auto; }
+    .skip { position: absolute; z-index: 3; top: .75rem; left: .75rem; transform: translateY(-200%); padding: .55rem .85rem; background: var(--surface); }
+    .skip:focus { transform: translateY(0); }
+    .site-header { border-bottom: 1px solid var(--line); }
+    .header-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem 2rem; min-height: 4.6rem; padding-block: .75rem; }
+    .brand { color: var(--ink); font: 700 1.5rem/1 var(--serif); letter-spacing: -.045em; text-decoration: none; }
+    .site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem clamp(.8rem, 2vw, 1.75rem); }
+    .site-nav a { color: var(--ink); font-size: .9rem; font-weight: 600; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; }
+    a.nav-contact { padding: .35rem .85rem; border: 1px solid #a9baae; border-radius: 2rem; }
+
+    .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 21rem); align-items: center; gap: clamp(2.25rem, 6vw, 6rem); padding-block: clamp(3.2rem, 8vw, 7rem); }
+    .hero h1 span { display: block; }
+    .label { color: var(--green); font-size: .875rem; font-weight: 700; letter-spacing: .1em; line-height: 1.4; text-transform: uppercase; }
+    .hero .label { margin-bottom: 1.15rem; }
+    .role { color: var(--green); margin-top: 1.3rem; font-weight: 650; }
+    .intro { max-width: 35rem; color: var(--muted); margin-top: .8rem; font-size: 1.125rem; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem 1.3rem; margin-top: 1.55rem; }
+    .button { display: inline-block; padding: .64rem 1.15rem; border: 1px solid var(--green); border-radius: .3rem; background: var(--green); color: white; font-size: .925rem; font-weight: 650; text-decoration: none; }
+    .button:hover { background: #143e34; }
+    .button:focus-visible { outline-color: var(--green); }
+    .text-link { font-size: .925rem; font-weight: 650; }
+    .portrait { padding: .6rem; border: 1px solid var(--line); background: var(--surface); }
+    .portrait-frame {
+      position: relative; display: grid; place-items: center; overflow: hidden;
+      aspect-ratio: 549 / 592; background: var(--light-green);
+    }
+    .portrait-monogram { color: var(--green); font: 400 clamp(3.5rem, 9vw, 6rem)/1 var(--serif); letter-spacing: -.08em; }
+    .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .portrait figcaption { padding: .66rem .3rem .16rem; color: var(--muted); font-size: .875rem; }
+
+    .band { border-block: 1px solid var(--line); background: var(--light-green); }
+    .section-space { padding-block: clamp(3.3rem, 7vw, 6.25rem); }
+    .section-lead { margin-bottom: clamp(1.7rem, 4vw, 2.75rem); }
+    .section-lead p { max-width: 42rem; margin-top: .85rem; color: var(--muted); }
+    .research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.55rem, 4vw, 3rem); }
+    .research-item { border-top: 2px solid #8aa89b; padding-top: 1.05rem; }
+    .research-item p { margin-top: .75rem; color: var(--muted); }
+    .publication-list { margin: 1.65rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .publication-list li { display: grid; grid-template-columns: 4rem 1fr auto; align-items: start; gap: .45rem 1rem; border-bottom: 1px solid var(--line); padding-block: 1.3rem; }
+    .publication-list li.undated-entry > div { grid-column: 2; }
+    .publication-list time { margin-top: .14rem; color: var(--green); font-size: .875rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .publication-list :is(h3, h4) { font-size: clamp(1.2rem, 2.2vw, 1.55rem); line-height: 1.23; }
+    .publication-list p { margin-top: .4rem; color: var(--muted); font-size: .925rem; line-height: 1.55; }
+    .paper-link { margin-top: .1rem; font-size: .875rem; font-weight: 650; }
+    .more-publications { margin-top: 1.25rem; }
+    .news-media { border-top: 1px solid var(--line); }
+    .media-group + .media-group { margin-top: 2.1rem; }
+    .media-group .publication-list { margin-top: .8rem; }
+    .media-editions { display: flex; flex-wrap: wrap; gap: .25rem 1rem; margin-top: .4rem; }
+    .media-editions a { font-size: .925rem; font-weight: 650; }
+    .media-archive { margin-top: 1.35rem; }
+    .media-archive summary { width: fit-content; color: var(--green); cursor: pointer; font-size: .95rem; font-weight: 650; }
+    .media-archive summary:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+    .media-archive ul { margin: .85rem 0 0; padding-inline-start: 1.4rem; }
+    .media-archive li { margin-top: .45rem; color: var(--muted); }
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.55rem clamp(1.55rem, 4vw, 3rem); }
+    .project-grid section { min-width: 0; }
+    .project-grid h4 { font-size: clamp(1.45rem, 2.8vw, 1.8rem); letter-spacing: -.03em; }
+    .project-grid h5 { margin-top: 1rem; font-size: 1.25rem; }
+    .project-grid h5 + p { margin-top: .35rem; }
+    .project-grid .text-link { display: inline-block; margin-top: .55rem; }
+    .experience { border-top: 1px solid var(--line); background: var(--surface); }
+    .experience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.75rem clamp(2.25rem, 7vw, 6rem); }
+    .experience h2 { font-size: clamp(2.1rem, 4vw, 3rem); }
+    .experience h3 { margin-top: 1.2rem; font-size: 1.4rem; }
+    .experience p { color: var(--muted); margin-top: .55rem; }
+    .contact { background: #153b34; color: #f9f8f4; }
+    .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1.5rem 3rem; }
+    .contact p { max-width: 38rem; margin-top: .85rem; color: #d8e7df; }
+    .contact a { color: #f9f8f4; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: .85rem 1.45rem; }
+    .contact-links a { font-size: .95rem; font-weight: 650; }
+    .footer-note { padding-block: 1rem; border-top: 1px solid #48665d; color: #d8e7df; font-size: .875rem; }
+    .footer-note a:hover, .contact-links a:hover { color: var(--gold); }
+
+    @media (max-width: 50rem) {
+      .hero { grid-template-columns: minmax(0, 1fr) minmax(12rem, 32%); gap: 1.8rem; }
+      .research-grid { gap: 1.35rem; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 40rem) {
+      .wrap { width: calc(100% - 2rem); }
+      .header-row { align-items: flex-start; flex-direction: column; padding-block: 1rem; }
+      .site-nav { gap: .5rem .95rem; }
+      a.nav-contact { padding: 0; border: 0; }
+      .hero, .research-grid, .project-grid, .experience-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 2.7rem; }
+      .portrait { width: min(100%, 19rem); }
+      .publication-list li { grid-template-columns: 1fr; gap: .3rem; }
+      .publication-list li.undated-entry > div { grid-column: 1; }
+      .publication-list time, .paper-link { margin: 0; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#about">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Ridoscope home">Ridoscope</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#mei-lab">MEI Lab</a>
+        <a href="#news-media">News Media</a>
+        <a href="#teaching">Teaching and Departmental Leadership</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="about" tabindex="-1">
+    <!-- Update your name, role, biography, and profile links here. -->
+    <section class="wrap hero" aria-labelledby="name">
+      <div>
+        <p class="label">Northeastern University</p>
+        <h1 id="name"><span>Abdulhameed</span> <span>Olaitan Ridwanullah</span></h1>
+        <p class="role">Interdisciplinary researcher and PhD candidate</p>
+        <p class="intro">I study the sociotechnical dimensions of digital technology, examining how technical systems and social life shape one another.</p>
+        <p class="intro">My research focuses on platform governance, content moderation, and digital politics in Nigeria, with particular attention to how users navigate the rules that govern online speech.</p>
+        <div class="actions">
+          <a class="button" href="#research">Explore my research</a>
+          <a class="text-link" href="https://camd.northeastern.edu/people/abdulhameed-ridwanullah/">University profile &amp; CV</a>
+          <a class="text-link" href="https://scholar.google.com/citations?user=ANlG218AAAAJ">Google Scholar</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-frame">
+          <span class="portrait-monogram" aria-hidden="true">AR</span>
+          <img src="https://d3tvevvhad9ws1.cloudfront.net/wp-content/uploads/2026/08/olaitan-549x592.jpg" alt="Portrait of Abdulhameed Olaitan Ridwanullah" width="549" height="592" decoding="async" onerror="this.hidden = true">
+        </div>
+        <figcaption>Boston, Massachusetts</figcaption>
+      </figure>
+    </section>
+
+    <!-- Research descriptions can be updated as projects develop. -->
+    <section class="band" id="research" aria-labelledby="research-heading">
+      <div class="wrap section-space">
+        <div class="section-lead">
+          <h2 id="research-heading">Research focus</h2>
+          <p>My work connects the rules governing digital platforms to the choices people make when they speak, organize, and seek visibility online.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-item">
+            <h3>Platform governance</h3>
+            <p>My dissertation examines how Nigerian users understand and respond to content moderation. I’m interested in how their tactics can keep them visible or exploit gaps in enforcement.</p>
+          </article>
+          <article class="research-item">
+            <h3>Digital politics and conflict</h3>
+            <p>I study how political conflict takes shape on social media, including the use of hate speech in Nigerian politics and how patterns of online hostility compare with offline violence.</p>
+          </article>
+          <article class="research-item">
+            <h3>Strategic communication</h3>
+            <p>I examine how organizations build trust and communicate across differences, including how a community organization in northeastern Nigeria uses communication to support peacebuilding.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add a publication by copying one list item and updating its details and DOI. -->
+    <section class="wrap section-space" id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Selected publications</h2>
+      <ol class="publication-list" role="list">
+        <li>
+          <time datetime="2025">2025</time>
+          <div>
+            <h3>Strategic Communication and Peace-Promotion in a Nigerian Conflict Zone</h3>
+            <p>A. O. Ridwanullah &amp; M. E. Villar · <cite>Communication Studies</cite></p>
+          </div>
+          <a class="paper-link" href="https://doi.org/10.1080/10510974.2025.2544833" aria-label="Read article, Strategic Communication and Peace-Promotion in a Nigerian Conflict Zone">Read article</a>
+        </li>
+        <li>
+          <time datetime="2025">2025</time>
+          <div>
+            <h3>Politicization of Hate and Weaponization of Twitter/X in a Polarized Digital Space in Nigeria</h3>
+            <p>A. O. Ridwanullah, S. Y. Sule, B. Usman &amp; L. U. Abdulsalam · <cite>Journal of Asian and African Studies</cite></p>
+          </div>
+          <a class="paper-link" href="https://doi.org/10.1177/00219096241230500" aria-label="Read article, Politicization of Hate and Weaponization of Twitter/X in a Polarized Digital Space in Nigeria">Read article</a>
+        </li>
+        <li>
+          <time datetime="2023">2023</time>
+          <div>
+            <h3>The evolution of strategic communication: practices and reflections in Nigeria</h3>
+            <p>Y. S. Sule &amp; A. O. Ridwanullah · <cite>Public Relations Review</cite></p>
+          </div>
+          <a class="paper-link" href="https://doi.org/10.1016/j.pubrev.2023.102323" aria-label="Read article, The evolution of strategic communication: practices and reflections in Nigeria">Read article</a>
+        </li>
+        <li>
+          <time datetime="2022">2022</time>
+          <div>
+            <h3>Social media literacy: fake news consumption and perception of COVID-19 in Nigeria</h3>
+            <p>B. Usman, A. E. Msughter &amp; O. A. Ridwanullah · <cite>Cogent Arts &amp; Humanities</cite></p>
+          </div>
+          <a class="paper-link" href="https://doi.org/10.1080/23311983.2022.2138011" aria-label="Read article, Social media literacy: fake news consumption and perception of COVID-19 in Nigeria">Read article</a>
+        </li>
+      </ol>
+      <p class="actions more-publications">
+        <a class="text-link" href="https://camd.northeastern.edu/people/abdulhameed-ridwanullah/">More publications on my Northeastern profile</a>
+        <a class="text-link" href="https://scholar.google.com/citations?user=ANlG218AAAAJ">Google Scholar</a>
+      </p>
+    </section>
+
+    <section class="band" id="mei-lab" aria-labelledby="mei-lab-heading">
+      <div class="wrap section-space">
+        <div class="section-lead">
+          <h2 id="mei-lab-heading">Media for Empowerment and Impact Lab</h2>
+          <p>I’m a doctoral researcher with the MEI Lab at Northeastern University. The lab studies how media and strategic communication can support public health, strengthen communities, and advance social change.</p>
+          <p>My work includes research on how a community organization in northeastern Nigeria uses strategic communication to support peacebuilding.</p>
+        </div>
+        <a class="text-link" href="https://meilab.sites.northeastern.edu/">Visit Northeastern’s MEI Lab</a>
+      </div>
+    </section>
+
+    <!-- Keep versions of the same article together and list coverage separately from bylined work. -->
+    <section class="news-media" id="news-media" aria-labelledby="news-media-heading">
+      <div class="wrap section-space">
+        <div class="section-lead">
+          <h2 id="news-media-heading">News Media</h2>
+          <p>My writing on technology, privacy, and journalism in Nigeria, along with coverage of my work. I previously reported for Herald.ng, The Herald in Ilorin, and Jigawa Broadcasting Corporation.</p>
+        </div>
+        <div class="media-group">
+          <h3>Articles and commentary</h3>
+          <ul class="publication-list" role="list">
+            <li>
+              <time datetime="2026-02-14">2026</time>
+              <div>
+                <h4>AI disruption: Why Africa is missing from the conversation</h4>
+                <div class="media-editions">
+                  <a href="https://dailyrealityng.com/2026/02/14/ai-disruption-why-africa-is-missing-from-the-conversation/" aria-label="Read AI disruption at The Daily Reality">The Daily Reality</a>
+                  <a href="https://techdigest.ng/ai-disruption-why-africa-is-missing-from-the-conversation/" aria-label="Read AI disruption at Tech Digest">Tech Digest</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <time datetime="2025-12-10">2025</time>
+              <div>
+                <h4>Sharenting and infant privacy: The hidden cost of sharing our children online</h4>
+                <p><cite>The Daily Reality</cite> · December 10, 2025</p>
+              </div>
+              <a class="paper-link" href="https://dailyrealityng.com/2025/12/10/sharenting-and-infant-privacy-the-hidden-cost-of-sharing-our-children-online/" aria-label="Read article, Sharenting and infant privacy: The hidden cost of sharing our children online">Read article</a>
+            </li>
+            <li class="undated-entry">
+              <div>
+                <h4>2025 Nobel Chemistry Prize and Nigeria’s industrialisation</h4>
+                <p><cite>The Sun Nigeria</cite></p>
+              </div>
+              <a class="paper-link" href="https://thesun.ng/2025-nobel-chemistry-prize-and-nigerias-industrialisation/" aria-label="Read article, 2025 Nobel Chemistry Prize and Nigeria’s industrialisation">Read article</a>
+            </li>
+            <li>
+              <time datetime="2023-04-07">2023</time>
+              <div>
+                <h4>Before the mob cancels journalism</h4>
+                <div class="media-editions">
+                  <a href="https://guardian.ng/opinion/before-the-mob-cancels-journalism/" aria-label="Read Before the mob cancels journalism at The Guardian Nigeria">The Guardian Nigeria</a>
+                  <a href="https://dailytrust.com/before-the-mob-cancels-journalism/" aria-label="Read Before the mob cancels journalism at Daily Trust">Daily Trust</a>
+                  <a href="https://thenationonlineng.net/the-rampaging-cancel-culture/" aria-label="Read The rampaging cancel culture at The Nation">The Nation</a>
+                </div>
+                <p>Published by <cite>The Nation</cite> as “The rampaging cancel culture.”</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2022-10-28">2022</time>
+              <div>
+                <h4>On Nigeria’s drive to digital economy</h4>
+                <div class="media-editions">
+                  <a href="https://punchng.com/on-nigerias-drive-to-digital-economy/" aria-label="Read On Nigeria’s drive to digital economy at PUNCH">PUNCH</a>
+                  <a href="https://dailytrust.com/leveraging-on-nigerias-digital-drive-to-boost-economy/" aria-label="Read Leveraging on Nigeria’s digital drive to boost economy at Daily Trust">Daily Trust</a>
+                </div>
+                <p>Published by <cite>Daily Trust</cite> as “Leveraging on Nigeria’s digital drive to boost economy.”</p>
+              </div>
+            </li>
+            <li>
+              <time datetime="2022-08-16">2022</time>
+              <div>
+                <h4>Misinformation on Social Media: Can Social Media Platforms Self-Regulate?</h4>
+                <p><cite>Skyline University Nigeria</cite> · August 16, 2022</p>
+              </div>
+              <a class="paper-link" href="https://sun.edu.ng/misinformation-on-social-media-can-social-media-platforms-self-regulate/" aria-label="Read article, Misinformation on Social Media: Can Social Media Platforms Self-Regulate?">Read article</a>
+            </li>
+            <li>
+              <time datetime="2021-12-22">2021</time>
+              <div>
+                <h4>Imperative for Journalism Safety Education in Nigeria</h4>
+                <p><cite>Skyline University Nigeria</cite> · December 22, 2021</p>
+              </div>
+              <a class="paper-link" href="https://sun.edu.ng/imperative-for-journalism-safety-education-in-nigeria/" aria-label="Read article, Imperative for Journalism Safety Education in Nigeria">Read article</a>
+            </li>
+            <li>
+              <time datetime="2014-12-07">2014</time>
+              <div>
+                <h4>Fourth estate of the realm or wreck?</h4>
+                <p><cite>Peoples Daily</cite> · December 7, 2014</p>
+              </div>
+              <a class="paper-link" href="https://peoplesdaily.ng/fourth-estate-of-the-realm-or-wreck/" aria-label="Read article, Fourth estate of the realm or wreck?">Read article</a>
+            </li>
+          </ul>
+          <details class="media-archive">
+            <summary>Earlier newspaper writing</summary>
+            <ul>
+              <li>“Bequeathing a legacy of corruption” · <cite>Herald.ng</cite> · 2016</li>
+              <li>“Ability in disability” · <cite>The Herald</cite> · 2009</li>
+              <li>“Nigerian League Kicks off: Will Nigerian Fans Shift Allegiance from European Clubs?” · <cite>The Herald</cite> · 2009</li>
+            </ul>
+          </details>
+        </div>
+        <div class="media-group">
+          <h3>Media coverage</h3>
+          <ul class="publication-list" role="list">
+            <li class="undated-entry">
+              <div>
+                <h4>CTM Scholar Spotlight: Ridwanullah Abdulhameed</h4>
+                <p>Raja Antony Mandal · <cite>Northeastern University’s Center for Transformative Media</cite></p>
+                <p>An interview about my research on digital platforms, hate speech, and democracy in Nigeria.</p>
+              </div>
+              <a class="paper-link" href="https://camd.northeastern.edu/news/ctm-scholar-spotlight-ridwanullah-abdulhameed/" aria-label="Read the CTM Scholar Spotlight interview">Read interview</a>
+            </li>
+            <li>
+              <time datetime="2024-10-27">2024</time>
+              <div>
+                <h4>Bridging research and policy</h4>
+                <p><cite>Emergency Digest</cite> · October 27, 2024</p>
+              </div>
+              <a class="paper-link" href="https://emergencydigest.com/2024/10/27/bridging-research-policy-case/" aria-label="Read article, Bridging research and policy">Read article</a>
+            </li>
+            <li>
+              <time datetime="2024-08-13">2024</time>
+              <div>
+                <h4>Adopting modern teaching methodologies can revolutionise learning</h4>
+                <p>Buba Danladi · <cite>PUNCH</cite> · August 13, 2024</p>
+                <p>A former student reflects on my teaching at Skyline University Nigeria.</p>
+              </div>
+              <a class="paper-link" href="https://punchng.com/adopting-modern-teaching-methodologies-can-revolutionise-learning/" aria-label="Read article, Adopting modern teaching methodologies can revolutionise learning">Read article</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add public project files or links alongside their credits when available. -->
+    <section class="band" id="teaching" aria-labelledby="teaching-heading">
+      <div class="wrap section-space">
+        <div class="section-lead">
+          <h2 id="teaching-heading">Teaching and Departmental Leadership</h2>
+        </div>
+        <div class="section-lead">
+          <h3>Northeastern University</h3>
+          <p>I teach undergraduate Public Speaking. Students practice making an argument, using evidence, and speaking to audiences who may see an issue differently.</p>
+        </div>
+        <section id="media-projects" aria-labelledby="media-projects-heading">
+          <div class="section-lead">
+            <h3 id="media-projects-heading">Skyline University Nigeria</h3>
+            <p>I taught media and communication courses and served as Head of Mass Communication from 2021 to 2023. I helped develop the curriculum, mentored students, and organized opportunities for them to publish, produce programmes, and learn from working journalists.</p>
+          </div>
+          <div class="project-grid">
+            <section class="research-item" id="skyline-student-publishing" aria-labelledby="skyline-student-publishing-heading">
+              <h4 id="skyline-student-publishing-heading">Student newspapers and campus publishing</h4>
+              <h5>The Skyline Explorer</h5>
+              <p>A student newspaper I published for the Skyline University Nigeria community.</p>
+              <a class="text-link" href="https://www.linkedin.com/posts/abdulhameed-ridwanullah-89919175_skyline-exlorer-ugcPost-7093296008624783360-4-LM/">View the newspaper on LinkedIn</a>
+              <h5>The Skyline</h5>
+              <p>Course lecturer and supervising editor for the inaugural issue, produced by second-year Mass Communication students in June 2021.</p>
+              <h5>Newsline</h5>
+              <p>Staff editor for the first edition of the university’s annual magazine in 2021.</p>
+              <a class="text-link" href="https://sun.edu.ng/skyline-university-nigeria-launches-first-edition-of-newsline-magazine/">Read the launch announcement</a>
+            </section>
+            <section class="research-item" id="skyline-technical-visit" aria-labelledby="skyline-technical-visit-heading">
+              <h4 id="skyline-technical-visit-heading">Technical visit</h4>
+              <h5>Abubakar Rimi Television (ARTV)</h5>
+              <p>I led second-year Mass Communication students on a studio visit in Kano on May 19, 2021. Staff showed students how the station develops programmes, sources content, and runs day-to-day operations.</p>
+              <a class="text-link" href="https://sun.edu.ng/skyline-university-nigeria-exposes-mass-communication-students-to-media-practice-at-abubakar-rimi-television-artv/">Read Skyline University’s field trip report</a>
+            </section>
+            <section class="research-item" id="skyline-workshop" aria-labelledby="skyline-workshop-heading">
+              <h4 id="skyline-workshop-heading">Workshops, seminars, and guest lectures</h4>
+              <h5>Guest lecture series</h5>
+              <p>I organized a guest lecture series for Mass Communication students. One session featured Clement Oloyede, then Northern Bureau Chief of <cite>Daily Trust</cite>.</p>
+              <h5>Contemporary Issues in Media Law and Ethics in Nigeria</h5>
+              <p>I organized this departmental seminar at Skyline University Nigeria on <time datetime="2022-01-14">January 14, 2022</time>.</p>
+              <ul>
+                <li><strong>Aisha Zannah Mustapha</strong> presented “Media Coverage of Boko Haram Insurgency: Reflection on Journalists’ Ethical Dilemma.”</li>
+                <li><strong>Aisha Inuwa Salihi</strong> presented “The Real Buhari Documentary and the Question of Ethics in Political Broadcasting in Nigeria.”</li>
+                <li><strong>Bilkisu Musbahu Abbas</strong> presented “Media Ethics in Nigeria: Lessons from Pulaku Ethical Codes.”</li>
+                <li><strong>Ruqayya Ali Bala</strong> presented “Challenges of Media Ethics in a Digital Age.”</li>
+              </ul>
+              <h5>Nurturing Psychological Safety in the Midst of Curriculum Unbundling</h5>
+              <p>I organized this departmental guest session on May 24, 2023, with Professor Abdalla Uba Adamu, former vice chancellor of the National Open University of Nigeria. The session addressed career choices, challenges, and opportunities for mass communication students as the curriculum was reorganized.</p>
+            </section>
+            <section class="research-item" id="skyline-documentary" aria-labelledby="skyline-documentary-heading">
+              <h4 id="skyline-documentary-heading">Documentary and television</h4>
+              <h5>Documentary project</h5>
+              <p>I worked on a documentary project during my time at Skyline University Nigeria.</p>
+              <h5>Skyline Reflection</h5>
+              <p>A monthly television magazine covering campus life in 2022.</p>
+              <h5>Student video productions</h5>
+              <p>Produced by my Mass Communication students at Skyline University Nigeria.</p>
+              <div class="media-editions">
+                <a href="https://youtu.be/bZEVqYsS694">Watch student production 1 on YouTube</a>
+                <a href="https://youtu.be/RIfuoalk7m0">Watch student production 2 on YouTube</a>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="experience" id="practice" aria-labelledby="practice-heading">
+      <div class="wrap section-space">
+        <h2 id="practice-heading">Professional work</h2>
+        <div class="experience-grid">
+          <div>
+            <h3>Public relations and media strategy</h3>
+            <p>I'm an Associate of the Nigerian Institute of Public Relations. My professional work includes training in media relations and public opinion management.</p>
+          </div>
+          <div>
+            <h3>Research affiliations</h3>
+            <p>I'm a graduate affiliate of Northeastern's Center for Transformative Media and the Center for Information, Technology, and Public Life at UNC-Chapel Hill.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Update these links when your preferred contact channels change. -->
+  <footer class="contact" id="contact">
+    <div class="wrap section-space contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Get in touch about research collaborations, speaking invitations, or professional inquiries.</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://camd.northeastern.edu/people/abdulhameed-ridwanullah/">Northeastern directory</a>
+        <a href="https://www.linkedin.com/in/abdulhameed-ridwanullah-anipr-89919175/">LinkedIn</a>
+        <a href="https://orcid.org/0000-0002-1211-8335">ORCID</a>
+      </div>
+    </div>
+    <div class="wrap footer-note">Abdulhameed Olaitan Ridwanullah · <a href="#top">Back to top</a></div>
+  </footer>
+</body>
+</html>
